@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <style>
+        .container {
+            max-width: 70vw;
+            height: max(40vh, 80vh);
+            border: 1px solid rgb(109, 107, 103);
+            background-color: rgb(243, 238, 230);
+            margin: auto;
+            border-radius: 40px;
+            padding: 4rem;
+        }
+
+        .editText {
+            background-color: rgb(243, 238, 230);
+            text-align: center;
+            width: 10ch;
+            min-width: 15px;
+            max-width: 500px;
+            border: none;
+            outline: none;
+        }
+
+
+        .sepr {
+            margin-top: 2rem;
+            width: 80%;
+            border: 1px solid black;
+        }
+
+        .check-btn {
+            height: 14px;
+            width: 14px;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .item_container {
+            max-width: 70%;
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+            margin: 1.4rem 0;
+            border: 2px solid rgb(122, 115, 84);
+            padding: 0.5rem 0.2rem;
+        }
+
+        .item_container:hover {
+            transition: transform 300ms ease-in-out;
+            transform: scale(1.04);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input_container">
+            =<input type="text" class="userIn editText" placeholder="add list">
+            <button type="submit" class="userIn-btn">ADD</button>
+        </div>
+        <div class="sepr"></div>
+        <div class="list_container">
+        </div>
+
+    </div>
+
+
+    <script src="to_do_script.js">
+    </script>
+</body>
+
+</html>
